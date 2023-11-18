@@ -24,8 +24,8 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     
     -
-      name: Set up Docker Build
-      uses: docker/setup-build-action@v3
+      name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
 
     -
       name: build and push
